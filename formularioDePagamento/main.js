@@ -1,6 +1,4 @@
 import './style.css'
-
-
 document.querySelector('#app').innerHTML = `
 <div class="credit-card">
 <div class="credit-card-front">
