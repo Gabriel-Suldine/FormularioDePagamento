@@ -9,23 +9,18 @@
 </head>
 
 <body>
-  <div class="container">
-    <form id="formulario">
-      <label>Numero do Cartão:</label><input class="numeroCartao" type="number">
-      <label>Nome:</label><input class="nome" type="text"><br>
-      <label>Data de vencimento:</label><input class="dataVencimento" type="date">
-      <label>Codigo de segurança(CCV):</label><input class="ccv" type="number">
-      <button class="button">Confirmar</button>
-    </form>
+  <form class="container" id="formulario">
+    <div class="grid">  
+      <label>Numero do Cartão:</label><input  type="number" name="numeroCartao" maxlength="16">
+      <label>Nome:</label><input name="nome" type="text" maxlength="20"><br>
+      <label>Data de vencimento:</label><input name="dataDeVencimento" type="date">
+      <label>Codigo de segurança(CCV):</label><input name="ccv" type="number">
+      <button type="submit" class="button">Confirmar</button>  
+    </div>      
+  </form>  
   </div>
-
-
-
-
-
-
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
+    <div id="cartao"></div>
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
