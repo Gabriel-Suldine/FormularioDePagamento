@@ -1,4 +1,5 @@
 import './style.css'
+import '@picocss/pico'
 const formulario = document.querySelector('#formulario');
 const numeroCartao = formulario.numeroCartao;
 const nome = formulario.nome;

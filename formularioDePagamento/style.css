@@ -73,3 +73,14 @@
   right: var(--padding);
   bottom: var(--padding);
 }
+.container{  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+
+
+
+

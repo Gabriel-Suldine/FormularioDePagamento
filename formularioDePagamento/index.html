@@ -8,18 +8,31 @@
   <title>Formulario</title>
 </head>
 
-<body>
-  <form class="container" id="formulario">
-    <div class="grid">  
-      <label>Numero do Cartão:</label><input  type="number" name="numeroCartao" maxlength="16">
-      <label>Nome:</label><input name="nome" type="text" maxlength="20"><br>
-      <label>Data de vencimento:</label><input name="dataDeVencimento" type="date">
-      <label>Codigo de segurança(CCV):</label><input name="ccv" type="number">
-      <button type="submit" class="button">Confirmar</button>  
-    </div>      
-  </form>  
-  </div>
-    <div id="cartao"></div>
+<body>   
+  
+    <div class="container">  
+      <form id="formulario">
+        <div class="titulo"><H1>DETALHES PAGAMENTO</H1></div> 
+        
+        <label>Numero do Cartão</label>
+        <input type="number" name="numeroCartao" placeholder="Digite aqui o número do cartão" required>
+        <label>Digite seu nome</label>
+        <input name="nome" type="text" placeholder="Nome igual está no cartão" required>
+        <div class="grid">      
+          
+          <label>Data de vencimento:<input name="dataDeVencimento" type="date"></label>
+        <label>Codigo de segurança(CCV):<input name="ccv" type="number"></label>         
+        </div>   
+        <small>Confira seus dados antes de enviar</small> 
+        <button type="submit">Confirmar</button>       
+      </form>
+      <div id="cartao"></div>   
+    </div>
+ 
+
+
+
+
     <script type="module" src="/main.js"></script>
 </body>
 
