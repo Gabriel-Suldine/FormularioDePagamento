@@ -78,7 +78,16 @@
   justify-content: space-around;
   flex-direction: row;
 }
-
+@media (max-width: 990px) {
+  .container{
+    flex-direction: column;
+  }
+  .credit-card{
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 60%;
+  }
+}
 
 
 
